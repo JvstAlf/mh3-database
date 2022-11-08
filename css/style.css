@@ -1,0 +1,595 @@
+@import url('http://fonts.cdnfonts.com/css/Josefin');
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('../font/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'JosefinBold';
+    src: url('../font/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'JosefinSemibold';
+    src: url('../font/JosefinSans-SemiBold.ttf');
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    height: 20rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.body {
+    width: 95%;
+    min-height: 50rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    margin: 0 auto;
+    background-color: rgba(24, 30, 46, 0.5);
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    border-radius: 2rem;
+}
+
+p, h1, h2, h3, li, ul, ol, img {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.logo {
+    height: 100%;
+    float: right;
+}
+
+.title {
+    height: 30%;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+.title1 {
+    font-family: 'JosefinSemibold', sans-serif;
+    color: white;
+    margin-left: 2rem;
+    font-size: 4rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    font-weight: 800;
+    white-space: nowrap;
+    text-shadow: 0 .5rem 0.5rem black;
+    transition-duration: 0.5s;
+}
+
+.title1:hover {
+    transform: scale(1.02);
+}
+
+.title1:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title2 {
+    font-family: 'Josefin-Semibold', sans-serif;
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    text-shadow: 0 .5rem 0.5rem black;
+    max-width: 10%;
+}
+
+.grid-item1{
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-right: 0.5rem solid rgba(0, 0, 0, 0.5);
+}
+
+.grid-item2{
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 2rem;
+}
+
+.grid-item3{
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-left: 0.5rem solid rgba(0, 0, 0, 0.5);
+}
+
+.imgheader {
+    width: 25rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-top: 2rem;
+    max-width:100%;
+    max-height:100%;
+}
+
+.text {
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.text2 {
+    font-family: 'Josefin', sans-serif;
+    color: #aaaaaa;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.text1 {
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.containter2 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    border: 1px solid rgba(0, 0, 0, 0);
+    min-height: 20rem;
+}
+
+.container3, .container4 {
+    display: grid;
+    grid-template-columns: 16% 16% 16%;
+    justify-content: space-evenly;
+    border: 1px solid rgba(0, 0, 0, 0);
+    min-height: 20rem;
+    text-align: center;
+}
+
+.weapons {
+    height: 15rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.large-monsters {
+    height: 15rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.great-sword, .sword-shield, .hammer, .lance, .switch-axe, .long-sword, .light-bowgun, .medium-bowgun, .heavy-bowgun {
+    max-width: 80%;
+    max-height: 80%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.great-sword:hover, .sword-shield:hover, .hammer:hover, .lance:hover, .switch-axe:hover, .long-sword:hover, .light-bowgun:hover, .medium-bowgun:hover, .heavy-bowgun:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.large-monsters1 {
+    max-height:100%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    scale: 2;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.large-monsters1:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+    width: 98%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.navbar1 {
+    font-family: 'Josefin', sans-serif;
+    color: rgb(150, 150, 150);
+    list-style-type: none;
+    max-width:100%;
+    max-height:100%;
+    font-size: 1.5rem;
+    display: inline;
+}
+
+li:hover {
+    cursor: pointer;
+    color: rgb(83, 83, 83);
+}
+
+li {
+    display: inline;
+    margin-right: 2rem;
+    transition-duration: 0.2s;
+}
+
+.clr{
+    clear:both;
+    font-size:0;
+}
+
+.li:visited {
+    color: rgb(150, 150, 150);
+}
+
+.texttitle, .texttitle3 {
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 2rem;
+    transition-duration: 0.2s;
+    width: 100%;
+    text-align: center;
+}
+
+.texttitle4 {
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 2rem;
+    transition-duration: 0.2s;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0rem 0rem 1.5rem rgba(255, 255, 255, 0.8);
+}
+
+
+.texttitle2 {
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    transition-duration: 0.2s;
+    width: 100%;
+    text-align: center;
+}
+
+.texttitle:hover, .texttitle2:hover {
+    color: rgb(177, 177, 177);
+    cursor: pointer;
+}
+
+.map {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10%;
+    transition-duration: 0.5s;
+}
+
+.map:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+
+.weapons-tree {
+    display: grid;
+    grid-template-columns: 10% 60%;
+    justify-content: space-evenly;
+    transition-duration: 0.3s;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.weapons-tree:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.weapons-logo {
+    display: flex;
+    height: 80%;
+}
+
+.text-tree {
+    display: flex;
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.sources:visited {
+    color: white;
+}
+
+.sources:hover {
+    color: #808080;
+}
+
+.path-name {
+    width: 90%;
+    text-align: center;
+    background-color: rgba(255, 153, 0, 0.2);
+    border-radius: 0.5rem;
+    min-height: 1.5rem;
+    font-family: 'Josefin', 'sans-serif';
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+.path {
+    display: flex;
+    justify-content: center;
+}
+
+.path-info {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    min-width: 5%;
+}
+
+.path-info-text {
+    font-family: 'Josefin', 'sans-serif';
+    color: white;
+    text-shadow: 0rem 0rem 0.5rem #ffffff;
+    font-size: 1rem;
+    padding: 0.25rem 0 0.25rem 0;
+    border-radius: 0.25rem;
+    text-align: center;
+    min-width: 5%;
+}
+
+.path-info-text2 {
+    font-family: 'Josefin', 'sans-serif';
+    color: white;
+    font-size: 1rem;
+}
+
+.path-info-text2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.path-info-text3 {
+    font-family: 'Josefin', 'sans-serif';
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.path-info-sharpness {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.75rem;
+    border-radius: 0.3rem;
+}
+
+.body1 {
+    width: 95%;
+    min-height: 50rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    margin: 0 auto;
+    background-color: rgba(24, 30, 46, 0.5);
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.weapons-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.monsters-grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.weapon-image {
+    width: 100%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.monster-image {
+    width: 80%;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 1rem;
+}
+
+.sharpness {
+    margin: 0 auto;
+    width: 80%;
+    padding: 5% 10% 0 10%
+}
+
+.grid-item4 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.tree-redirect, .tree-redirect::after {
+    color: rgba(255, 153, 0, 0.5);
+    text-decoration: none;
+}
+
+.tree-redirect:hover {
+    opacity: 0.5;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+.bigImage {
+    z-index: 1500;
+    position: fixed;
+    max-height: 90%;
+    max-width: 100%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    flex-shrink: 0;
+    min-height: 50%;
+}
+
+.monster-quests:hover {
+    opacity: 1;
+    color: white;
+    cursor: default;
+}
+
+.monster-info {
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: 50% 50%;
+}
+
+.quest-list1 {
+    font-family: 'Josefin', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    list-style-type: disc;
+    content: initial;
+    display: block;
+}
+
+.monster-quests {
+    opacity: 1;
+    display: block;
+    list-style-type: disc;
+    content: initial;
+}
+
+/* CHANGE UL BULLETS COLOR */
+
+.quest-list1 li::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+.monster-sizes {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.crown {
+    width: 80%;
+    float: left;
+    margin: 0;
+}
+
+.text-sizes {
+    max-height: 100%;
+    margin: 0;
+    font-family: 'Josefin', 'sans-serif';
+    color: white;
+    font-size: 1.5rem;
+    min-height: 100%;
+    opacity: 0.5;
+    float: right;
+    padding-top: 0.5rem;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+.monster-icon {
+    width: 60%;
+}
+
+.monster-damage {
+    width: 90%;
+    margin-top: 1rem;
+    border: 1px;
+}
+
+.damage-info {
+    text-align: center;
+}
+
+.items-efficiency {
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 2rem;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px white; /* this draws the table border  */ 
+}
+
+.items-efficiency2 {
+    border: 1px solid white;
+}
+
+.monster-carves {
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 2rem;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px white; /* this draws the table border  */ 
+    margin: 0 auto;
+}
+
+.monster-carves1 {
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 3rem;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px white; /* this draws the table border  */ 
+    padding: 1rem;
+}
+
+model-viewer{
+    width:90%;
+    height: 25rem;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    }
+
+.note {
+    color: white;
+    text-align: center;
+    font-family: 'Josefin', 'sans-serif';
+}
