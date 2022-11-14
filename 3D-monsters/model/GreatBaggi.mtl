@@ -1,0 +1,24 @@
+# Blender3D MTL File: GreatBaggi.blend
+# Material Count: 2
+newmtl GreatBaggi1_em014_BM_01.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.000000
+illum 0
+map_Kd em014_BM_01.png
+
+
+newmtl GreatBaggi2_em014_BM_01.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.000000
+illum 0
+map_Kd em014_BM_01.png
+
+
